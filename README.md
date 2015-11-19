@@ -29,7 +29,10 @@ The above will return a dataframe containing movies with a matching name, plus a
 
 The returned dataframe contains:
 
-*Title + Name of the movie *Type + Media type of that item. In addition to movies, OMDb also stores information about TV Shows and Video games *Year + Year of release *imdbID + The IMDB id of the selected item \*Poster + A link to the movie poster
+-   Title
+    -   Name of the movie
+
+*Type + Media type of that item. In addition to movies, OMDb also stores information about TV Shows and Video games *Year + Year of release *imdbID + The IMDB id of the selected item *Poster + A link to the movie poster
 
 ### Get Movie
 
