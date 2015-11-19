@@ -2,7 +2,7 @@
 #'
 #' @param search_string string
 #'
-#' @return tbl_df
+#' @return dataframe
 #' @export
 #' @examples
 #' search_movie("The Matrix")

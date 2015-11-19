@@ -10,7 +10,7 @@ search_movie(search_string)
 \item{search_string}{string}
 }
 \value{
-tbl_df
+dataframe
 }
 \description{
 Search for a movie in the database
