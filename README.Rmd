@@ -42,16 +42,15 @@ The above will return a dataframe containing movies with a matching name, plus a
 
 The returned dataframe contains:
 
-* Title
+* **Title**
 	+ Name of the movie
-	
-*Type
+* **Type**
 	+ Media type of that item. In addition to movies, OMDb also stores information about TV Shows and Video games
-*Year
+* **Year**
 	+ Year of release
-*imdbID
+* **imdbID**
 	+ The IMDB id of the selected item
-*Poster
+* **Poster**
 	+ A link to the movie poster
 
 ###Get Movie
@@ -64,69 +63,88 @@ This returns a list containing information about the movie.
 
 The following information is available for each movie:
 
-*Title
+* **Title**
 	+ Name of the movie
-*Year
+* **Year**
 	+ Year of release
-*Rated
+* **Rated**
 	+ The IMDB id of the selected item
-*Released
+* **Released**
 	+ Release data
-*Runtime
+* **Runtime**
 	+ Total movie runtime
-*Genre
+* **Genre**
 	+ Genre(s) of the movie
-*Director
+* **Director**
 	+ Movie director(s)
-*Writer
+* **Writer**
 	+ Movie writer(s)
-*Actors
+* **Actors**
 	+ Movie actor(s)
-*Plot
+* **Plot**
 	+ Brief plot summary
-*Language
+* **Language**
 	+ Original movie language
-*Country
+* **Country**
 	+ Country of origin
-*Awards
+* **Awards**
 	+ Awards nominated for/won
-*Poster
+* **Poster**
 	+ Link to the movie poster
-*Metascore
+* **Metascore**
 	+ Movie metascore, aggregated over multiple movie rating websites
-*imdbRating
+* **imdbRating**
 	+ Movie rating on IMDB
-*imdbVotes
+* **imdbVotes**
 	+ Number of votes received on IMDB
-*imdbID
+* **imdbID**
 	+ Identifier for IMDB
-*Type
+* **Type**
 	+ Type of media
-*tomatoMeter
+* **tomatoMeter**
 	+ Percentage of critics that gave movie a positive review
-*tomatoImage
+* **tomatoImage**
 	+ Review image type on rotten tomatoes
-*tomatoRating
+* **tomatoRating**
 	+ Movie rating by critics out of 10
-*tomatoReviews
+* **tomatoReviews**
 	+ Number of critic reviews
-*tomatoFresh
+* **tomatoFresh**
 	+ Number of positive reviews
-*tomatoRotten
+* **tomatoRotten**
 	+ Number of negative reviews
-*tomatoConsensus
+* **tomatoConsensus**
 	+ General consensus about the movie by reviewers
-*tomatoUserMeter
+* **tomatoUserMeter**
 	+ Percentage of users that liked the movie
-*tomatoUserRating
+* **tomatoUserRating**
 	+ User score out of 5
-*tomatoUserReviews
+* **tomatoUserReviews**
 	+ Number of user reviews
-*DVD
+* **DVD**
 	+ DVD release date
-*BoxOffice
+* **BoxOffice**
 	+ Box office gross
-*Production
+* **Production**
 	+ Production company
-*Website
+* **Website**
 	+ Movie website
+
+To extract only specific columns from the list use the `$` syntax in R
+
+## Examples
+
+```{r eval=FALSE}
+library(Romdb)
+
+searchResults <- search_movie("hunger games")
+
+hungerGamesMovie <- get_movie("The Hunger Games")
+
+hungerGamesMovie$Plot
+
+hungerGamesMovie$tomatoRating
+
+hungerGamesMovie$Metascore
+```
+
