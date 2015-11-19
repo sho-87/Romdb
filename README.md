@@ -117,7 +117,7 @@ The following information is available for each movie:
 -   **Website**
     -   Movie website
 
-To extract only specific columns from the list use the `$` syntax in R
+To extract only specific variables from the list use the `$` syntax in R
 
 Examples
 --------
