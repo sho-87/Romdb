@@ -25,6 +25,8 @@ You can search OMDb with a search string to see movies that share the same/a sim
 
 `results <- search_movie("matrix")`
 
+Note: a string must be passed to the function.
+
 The above will return a dataframe containing movies with a matching name, plus any relevant information about the movie.
 
 The returned dataframe contains:
@@ -45,6 +47,8 @@ The returned dataframe contains:
 If you know the specific movie name you're interested in, you can query the database for just that film and extract all information associated with it:
 
 `movie <- get_movie("Frozen")`
+
+Note: a string must be passed to the function.
 
 This returns a list containing information about the movie.
 
