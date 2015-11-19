@@ -7,8 +7,13 @@
 #' @examples
 #' search_movie("The Matrix")
 search_movie <- function(search_string){
+	if (search_string == "") {
+		return("Please supply a search term")
+	}
+
 	#replace spaces with %20 for the URL
 	search_string <- gsub(" ", "%20", search_string)
+
 	#combine the URL and search string
 	url <- paste("http://www.omdbapi.com/?s=", search_string, sep="")
 
@@ -17,6 +22,13 @@ search_movie <- function(search_string){
 
 	#create a dataframe for the results
 	df <- data.frame(searchResults)
+
+	#if no movie was found, return a message
+	if ("Response" %in% colnames(df)){
+		if(df$Response == "False"){
+			return("Movie not found. Please try again...")
+		}
+	}
 
 	#tidy up the column names
 	colnames(df) <- gsub("^Search.", "", colnames(df))

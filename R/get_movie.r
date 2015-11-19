@@ -7,8 +7,13 @@
 #' @examples
 #' movieInfo <- get_movie("The Matrix")
 get_movie <- function(title){
+	if (title == "") {
+		return("Please supply a movie name")
+	}
+
 	#replace spaces with %20 for the URL
 	title <- gsub(" ", "%20", title)
+
 	#combine the URL and movie name
 	url <- paste("http://www.omdbapi.com/?t=", title, "&tomatoes=true", sep="")
 

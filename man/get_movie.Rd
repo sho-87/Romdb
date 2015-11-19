@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_movie.r
 \name{get_movie}
 \alias{get_movie}
-\title{Get specific movie information}
+\title{Get information for a specific movie}
 \usage{
 get_movie(title)
 }
@@ -13,7 +13,7 @@ get_movie(title)
 list
 }
 \description{
-Get specific movie information
+Get information for a specific movie
 }
 \examples{
 movieInfo <- get_movie("The Matrix")

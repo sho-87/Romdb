@@ -13,3 +13,4 @@ RoxygenNote: 5.0.0
 Imports: httr
 URL: https://github.com/sho-87/Romdb
 BugReports: https://github.com/sho-87/Romdb/issues
+Suggests: testthat

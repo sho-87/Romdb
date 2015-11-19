@@ -16,6 +16,6 @@ tbl_df
 Search for a movie in the database
 }
 \examples{
-search_movie("Frozen")
+search_movie("The Matrix")
 }
 
