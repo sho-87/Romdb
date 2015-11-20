@@ -21,6 +21,12 @@ Install the package from Github:
 
 `install_github("sho-87/Romdb")`
 
+If it complains about packages not being found (e.g. stringi, curl), you'll need to manually install those packages before running `install_github`:
+
+`install.packages("curl")`
+
+`install.packages("stringi")`
+
 Load it into your R session:
 
 `library(Romdb)`
