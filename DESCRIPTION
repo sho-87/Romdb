@@ -10,7 +10,7 @@ Depends:
 License: MIT + file LICENSE
 LazyData: true
 RoxygenNote: 5.0.0
-Imports: httr
+Imports: httr, stringi, curl
 URL: https://github.com/sho-87/Romdb
 BugReports: https://github.com/sho-87/Romdb/issues
 Suggests: testthat,
