@@ -11,8 +11,8 @@ License: MIT + file LICENSE
 LazyData: true
 RoxygenNote: 5.0.0
 Imports: httr,
-		stringi,
-		curl
+	stringi,
+	curl
 URL: https://github.com/sho-87/Romdb
 BugReports: https://github.com/sho-87/Romdb/issues
 Suggests: testthat,
