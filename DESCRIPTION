@@ -6,7 +6,7 @@ Description: Request movie information (e.g., year of release, description, rati
     using the Open Movie Database API (http://omdbapi.com/). Movie information can
     be pulled directly by name, or queried using a search string.
 Depends:
-    R (>= 3.2.2)
+    R (>= 3.2.2), stringi, curl
 License: MIT + file LICENSE
 LazyData: true
 RoxygenNote: 5.0.0
