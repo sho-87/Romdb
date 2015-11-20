@@ -15,7 +15,5 @@ URL: https://github.com/sho-87/Romdb
 BugReports: https://github.com/sho-87/Romdb/issues
 Suggests: testthat,
     knitr,
-    rmarkdown,
-    string,
-    curl
+    rmarkdown
 VignetteBuilder: knitr
